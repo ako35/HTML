@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <form method="get" action="/account/login">
+    <form method="post" action="/account/login">
         <input type="text" name="ad" id=""><br>
         <input type="number" name="yas" id=""><br>
         <input type="email" name="eposta" id=""><br>
@@ -16,10 +16,34 @@
         <input type="url" name="site" id=""><br>
         <input type="tel" name="telefon" id=""><br>
         <input type="hidden" name="gizli" id=""><br>
+        <input type="checkbox" name="user" id="userId" checked>
+        <label for="userId">Kullanici sozlesmesini okudum</label><br>
+        <input type="checkbox" name="sales" id="salesId">
+        <label for="salesId">Satis sozlesmesini okudum</label><br>
+        <input type="radio" name="gender" id="erkekId">
+        <label for="erkekId">Erkek</label>
+        <input type="radio" name="gender" id="kadinId">
+        <label for="kadinId">Kadin</label><br>
+        <input type="file" name="avatar" id=""><br>
+        <input type="color" name="renk" id=""><br>
+        <input type="range" name="salary" id=""><br>
+        <input type="date" name="birthdate" id=""><br>
+        <input type="time" name="departureTime" id=""><br>
+        <input type="datetime-local" name="dt" id=""><br>
+        <input type="month" name="mn" id=""><br>
+        <input type="week" name="wk" id=""><br>
 
-        <input type="submit" value="Submit" name="" id="">
-        <input type="reset" value="Temizle" name="" id="">
-        <input type="button" value="Kaydet" name="" id="">
+        <select name="city" id="">
+            <option value="" disabled selected>Seciniz</option>
+            <option value="34">Istanbul</option>
+            <option value="35">Izmir</option>
+            <option value="06">Ankara</option>
+        </select><br>
+        <textarea name="" id="" cols="30" rows="5"></textarea><br>
+
+        <input type="button" value="Custom" name="" id="">
+        <input type="submit" value="Save" name="" id="">
+        <input type="reset" value="Reset" name="" id="">
     </form>
 </body>
 </html>
